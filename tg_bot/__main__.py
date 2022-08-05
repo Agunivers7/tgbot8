@@ -18,15 +18,16 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-➖➖➖➖➖➖➖➖➖➖➖➖➖🥇
-Vanakanda mapula😎 {}, Enperu Spoidermon Tirupurla irunthu😎
-Iam a best and powerful group Management bot 😁 created by @spoidermon12
-Iam only for Agunivers servant so iam not help you 🤣
-Anyways /help to get all help 
-➖➖➖➖➖➖➖➖➖➖➖➖➖🚵‍♀️
+───『 {} 』───
+Hey there *✮ {} ✮*,
+*Watashi No Namae Wa* "`Destiny (運命)`"*, A Musicart named after Beethoven's Symphony No*[.](https://telegra.ph/file/3cfeb559dc1ec093d21d8.mp4)*5 in C Minor Op.67*
+➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳
+ღღ   *Uptime*: 『 `{}` 』   ღღ
+➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳
+✧ *Users Interacted*: 『 `{}` 』
+✧ *Total Chats*: 『 `{}` 』
+♡ Try The Help Button below To Know My Abilities, or simply do /help 🙂. ♡
 """
-
-tg_bot_IMG = "https://telegra.ph/file/2d0fa7e07eb1fe3983aba.jpg"
 
 HELP_STRINGS = """
 Vanakanda mapula😎*{}*,Enna help katiya!.
