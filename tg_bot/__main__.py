@@ -37,7 +37,7 @@ the things I can help you with.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TOKISAKI_IMG = "https://telegra.ph/file/99bbcc3b8564804dc2ab0.jpg"
+TOKISAKI_IMG = "https://telegra.ph/file/e1d87ec2bdac4e3cfe0a4.mp4"
 KURUMI_IMG = "https://telegra.ph/file/e1d87ec2bdac4e3cfe0a4.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
@@ -139,9 +139,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             first_name = update.effective_user.first_name
             update.effective_message.reply_video(
                 TOKISAKI_IMG,
-                PM_START_TEXT.format(
-                    escape_markdown(first_name),
-                    escape_markdown(context.bot.first_name)),
+                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text=" Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="Creator♥️", url="https://t.me/Spoidermon12")],
                      [InlineKeyboardButton(text="🥰 Support Group", url="https://t.me/Agunivers_backup"), InlineKeyboardButton(text="🔔Join Channel", url="https://t.me/+-VTuSl1PSf8xODk1")],
