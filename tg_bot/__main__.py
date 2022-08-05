@@ -29,6 +29,12 @@ Hey there *✮ {} ✮*,
 ♡ Try The Help Button below To Know My Abilities, or simply do /help 🙂. ♡
 """
 
+GROUP_START_MSG = "👋 Hi {}\nI won't sleep yet, because I believe someone is waiting for my Music.\n\nUptime - {}"
+
+START_IMG = "https://telegra.ph/file/3cfeb559dc1ec093d21d8.mp4"
+
+
+
 HELP_STRINGS = """
 Vanakanda mapula😎*{}*,Enna help katiya!.
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
