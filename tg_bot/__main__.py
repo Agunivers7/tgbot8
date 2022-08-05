@@ -139,14 +139,15 @@ def start(bot: Bot, update: Update, args: List[str]):
             first_name = update.effective_user.first_name
             update.effective_message.reply_video(
                 TOKISAKI_IMG,
-                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(context.bot.first_name)),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text=" Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="Creator♥️", url="https://t.me/Spoidermon12")],
                      [InlineKeyboardButton(text="🥰 Support Group", url="https://t.me/Agunivers_backup"), InlineKeyboardButton(text="🔔Join Channel", url="https://t.me/+-VTuSl1PSf8xODk1")],
                      [InlineKeyboardButton(text="Source", url="https://github.com/Agunivers/tgbot7"), InlineKeyboardButton(text="Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
-
-    else:
+            
+       else:
         update.effective_message.reply_video(
                 KURUMI_IMG, caption=f"Zaphkiel!!!!\nI'm here with my Zaphkiel")
 
