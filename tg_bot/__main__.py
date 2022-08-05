@@ -18,16 +18,6 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-          😢😖😩😫😩😖😢
-          😢💔💔😫💔💔😢
-          💔👤👥💔👤👥💔
-          💔👤👤👤👤👥💔
-          💔👤👤👤👤👥💔
-          😢💔👤👤👥💔😢
-          😢😖💔👥💔😖😢
-          😢😖😩💔😩😖😢
-          😢😖😩😫😩😖😢
-
 ➖➖➖➖➖➖➖➖➖➖➖➖➖🥇
 Vanakanda mapula😎 {}, Enperu (Spoidermon)! Tirupurla irunthu😎
 Iam a best and powerful group Management bot 😁 created by @spoidermon12
