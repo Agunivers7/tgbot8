@@ -18,23 +18,9 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-───『 {} 』───
-Hey there *✮ {} ✮*,
-*Watashi No Namae Wa* "`Destiny (運命)`"*, A Musicart named after Beethoven's Symphony No*[.](https://telegra.ph/file/3cfeb559dc1ec093d21d8.mp4)*5 in C Minor Op.67*
-➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳
-ღღ   *Uptime*: 『 `{}` 』   ღღ
-➳➳➳➳➳➳➳➳➳➳➳➳➳➳➳
-✧ *Users Interacted*: 『 `{}` 』
-✧ *Total Chats*: 『 `{}` 』
-♡ Try The Help Button below To Know My Abilities, or simply do /help 🙂. ♡
+Hi {}, my name is {}! 
+I am an Anime themed group management bot. I will use my angel Zafkiel and protect your group. You can find my list of available commands with /help.
 """
-
-GROUP_START_MSG = "👋 Hi {}\nI won't sleep yet, because I believe someone is waiting for my Music.\n\nUptime - {}"
-
-START_IMG = "https://telegra.ph/file/3cfeb559dc1ec093d21d8.mp4"
-
-
-
 HELP_STRINGS = """
 Vanakanda mapula😎*{}*,Enna help katiya!.
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
@@ -50,6 +36,9 @@ the things I can help you with.
 {}
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
+
+TOKISAKI_IMG = "https://telegra.ph/file/99bbcc3b8564804dc2ab0.jpg"
+KURUMI_IMG = "https://telegra.ph/file/e1d87ec2bdac4e3cfe0a4.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 It took lots of work for [my creator](t.me/Spoidermon12) to get me to where I am now, and every donation helps \
