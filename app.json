@@ -20,6 +20,7 @@
     },
     "TOKEN": {
       "description": "Your bot token, as a string."
+      "value":"5352130468:AAF-uRWd2BvgqeLhDD-6qs1-CtqIaENKiGQ"
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
@@ -35,6 +36,7 @@
     },
     "URL": {
       "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/"
+      "value": "https://appname.herokuapp.com/"
     },
     "MESSAGE_DUMP": {
       "description": "optional: a chat where your replied saved messages are stored, to stop people deleting their old",
