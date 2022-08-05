@@ -22,6 +22,7 @@ Hi {}, my name is {}!
 I am an Anime themed group management bot. I will use my angel Zafkiel and protect your group. You can find my list of available commands with /help.
 """
 
+
 HELP_STRINGS = """
 Vanakanda mapula😎*{}*,Enna help katiya!.
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
