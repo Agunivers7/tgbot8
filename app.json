@@ -20,7 +20,7 @@
     },
     "TOKEN": {
       "description": "Your bot token, as a string."
-      "value":"5352130468:AAF-uRWd2BvgqeLhDD-6qs1-CtqIaENKiGQ"
+      "value": "5352130468:AAF-uRWd2BvgqeLhDD-6qs1-CtqIaENKiGQ"
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
