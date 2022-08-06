@@ -29,7 +29,6 @@ PM_START_TEXT = """
 """
 
 HELP_STRINGS = """
-Vanakanda mapula*{}*,Enna help katiya!.
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
 the things I can help you with.
 *Main* commands available:
