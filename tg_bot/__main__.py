@@ -18,7 +18,7 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-────「 [{}](https://te.legra.ph/file/6371ce12c03bf90c58447.mp4) 」────
+────「 [{}]TOKISAKI_IMG, 」────
 *Hola! {},*
 *I am an Anime themed advance group management bot with a lot of Cool Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
