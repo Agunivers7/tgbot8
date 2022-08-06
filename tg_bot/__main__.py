@@ -144,10 +144,13 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_video(
-                TOKISAKI_IMG,
-                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-
+            update.effective_message.reply_photo(
+                photo=Yuii_IMG,
+                caption=gs(chat.id, "pm_start_text").format(
+                    escape_markdown(first_name),
+                    escape_markdown(context.bot.first_name),
+                    OWNER_ID,
+                ),
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text=" Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="Creator♥️", url="https://t.me/Spoidermon12")],
                      [InlineKeyboardButton(text="🥰 Support Group", url="https://t.me/Agunivers_backup"), InlineKeyboardButton(text="🔔Join Channel", url="https://t.me/+-VTuSl1PSf8xODk1")],
