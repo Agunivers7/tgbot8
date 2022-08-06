@@ -18,7 +18,7 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-────「 [{}]TOKISAKI_IMG, 」────
+────「 [{}]」────
 *Hola! {},*
 *I am an Anime themed advance group management bot with a lot of Cool Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -144,8 +144,8 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_photo(
-                photo=Yuii_IMG,
+            update.effective_message.reply_video(
+                Video=TOKISAKI_IMG,
                 caption=gs(chat.id, "pm_start_text").format(
                     escape_markdown(first_name),
                     escape_markdown(context.bot.first_name),
