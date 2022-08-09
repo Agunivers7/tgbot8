@@ -18,14 +18,9 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-────「 [{}]」────
-*Hola! {},*
-*I am an Anime themed advance group management bot with a lot of Cool Features.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Uptime:* `{}`
-❍ `{}` *users, across* `{}` *chats.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The Help Buttons Below To Know My Abilities ××
+Hi {}, my name is {}! 
+I am chizuru ichinose a group manager bot.Rent me for your group if you want😃😃.
+You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
