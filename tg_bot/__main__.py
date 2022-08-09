@@ -18,9 +18,14 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}!
-
-You can find the list of available commands with /help.
+────「 [{}] 」────
+*Hola! {},*
+*I am an Anime themed advance group management bot with a lot of Cool Features.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+❍ Jejsjsjsnsnd
+❍ gshsjsjsjsj
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+➛ Try The Help Buttons Below To Know My Abilities ××
 """
 
 BOT_IMAGE = "https://telegra.ph/file/93612a540608640355f20.mp4"
