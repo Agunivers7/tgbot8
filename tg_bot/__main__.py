@@ -18,12 +18,11 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am chizuru ichinose a group manager bot.Rent me for your group if you want😃😃.
-You can find my list of available commands with /help.
+Hi {}, my name is {}!
+You can find the list of available commands with /help.
 """
 
-BOT_IMG = "https://telegra.ph/file/eee3cb7efa205ca5b1262.mp4"
+BOT_IMAGE = "https://telegra.ph/file/93612a540608640355f20.mp4"
 
 
 
@@ -140,28 +139,13 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_animation(
-                BOT_IMG,
-                caption=PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(context.bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN,
-                reply_markup=InlineKeyboardMarkup(
-                    [[
-                        InlineKeyboardButton(
-                            text="➕️Add mizuhara to your group",
-                            url="t.me/{}?startgroup=true".format(context.bot.username))
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="Support Chat ",
-                            url="https://t.me/chizurusupport"),
-                        InlineKeyboardButton(
-                            text="📍Updates ",
-                            url="https://t.me/chizuruupdates")
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="help",
-                            url="https://t.me/Chizurumanagementbot?start=help")
-                    ]]))
+                BOT_IMAGE,
+                caption=PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
+
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
+                    [[InlineKeyboardButton(text=" Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="Creator♥️", url="https://t.me/Spoidermon12")],
+                     [InlineKeyboardButton(text=" Support Group", url="https://t.me/Agunivers_backup"), InlineKeyboardButton(text="🔔Join Channel", url="https://t.me/+-VTuSl1PSf8xODk1")],
+                     [InlineKeyboardButton(text="Source", url="https://github.com/Agunivers/tgbot7"), InlineKeyboardButton(text="Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
 
 
 
