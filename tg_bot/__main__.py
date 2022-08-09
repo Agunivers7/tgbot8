@@ -19,12 +19,11 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 Hi {}, my name is {}!
+
 You can find the list of available commands with /help.
 """
 
 BOT_IMAGE = "https://telegra.ph/file/93612a540608640355f20.mp4"
-
-
 
 HELP_STRINGS = """
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
