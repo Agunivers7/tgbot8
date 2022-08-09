@@ -19,16 +19,17 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 ────「 [{}] 」────
-*Hola! {},*
-*I am an Anime themed advance group management bot with a lot of Cool Features.*
+*𝙃𝙤𝙡𝙖! {},*
+*
+𝙄 𝙖𝙢  𝙖𝙙𝙫𝙖𝙣𝙘𝙚 𝙜𝙧𝙤𝙪𝙥 𝙢𝙖𝙣𝙖𝙜𝙚𝙢𝙚𝙣𝙩 𝙗𝙤𝙩 𝙬𝙞𝙩𝙝 𝙖 𝙡𝙤𝙩 𝙤𝙛 𝘾𝙤𝙤𝙡 𝙁𝙚𝙖𝙩𝙪𝙧𝙚𝙨.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ Jejsjsjsnsnd
-❍ gshsjsjsjsj
+❍ 𝘿𝙚𝙖𝙧 {}, 𝙄𝙖𝙢 𝙤𝙣𝙡𝙮 𝙛𝙤𝙧 𝘼𝙜𝙪𝙣𝙞𝙫𝙚𝙧𝙨
+❍ 𝙎𝙤 𝙞𝙖𝙢 𝙣𝙤𝙩 𝙛𝙤𝙧 𝙤𝙩𝙝𝙚𝙧 𝙜𝙧𝙤𝙪𝙥𝙨 𝙤𝙧 𝙘𝙝𝙖𝙣𝙣𝙚𝙡𝙨
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The Help Buttons Below To Know My Abilities ××
+➛ 𝙏𝙧𝙮 𝙏𝙝𝙚 𝙃𝙚𝙡𝙥 𝘽𝙪𝙩𝙩𝙤𝙣𝙨 𝘽𝙚𝙡𝙤𝙬 𝙏𝙤 𝙆𝙣𝙤𝙬 𝙈𝙮 𝘼𝙗𝙞𝙡𝙞𝙩𝙞𝙚𝙨 ××
 """
 
-BOT_IMAGE = "https://telegra.ph/file/93612a540608640355f20.mp4"
+BOT_IMAGE = "https://te.legra.ph/file/86d447fa4f58b581f36bd.mp4"
 
 HELP_STRINGS = """
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
@@ -142,14 +143,14 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_animation(
+            update.effective_message.reply_video(
                 BOT_IMAGE,
                 caption=PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text=" Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="Creator♥️", url="https://t.me/Spoidermon12")],
-                     [InlineKeyboardButton(text=" Support Group", url="https://t.me/Agunivers_backup"), InlineKeyboardButton(text="🔔Join Channel", url="https://t.me/+-VTuSl1PSf8xODk1")],
-                     [InlineKeyboardButton(text="Source", url="https://github.com/Agunivers/tgbot7"), InlineKeyboardButton(text="Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                    [[InlineKeyboardButton(text=" 𝘼𝙙𝙙 𝙢𝙚 𝙩𝙤 𝙮𝙤𝙪𝙧 𝙜𝙧𝙤𝙪𝙥", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="𝘾𝙧𝙚𝙖𝙩𝙤𝙧♥️", url="https://t.me/Spoidermon12")],
+                     [InlineKeyboardButton(text=" 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥", url="https://t.me/Agunivers_backup"), InlineKeyboardButton(text="🔔𝙅𝙤𝙞𝙣 𝘾𝙝𝙖𝙣𝙣𝙚𝙡", url="https://t.me/+-VTuSl1PSf8xODk1")],
+                     [InlineKeyboardButton(text="𝙎𝙤𝙪𝙧𝙘𝙚", url="https://github.com/Agunivers/tgbot7"), InlineKeyboardButton(text="𝙃𝙚𝙡𝙥", url="https://t.me/{}?start=help".format(bot.username)) ]]))
 
 
 
