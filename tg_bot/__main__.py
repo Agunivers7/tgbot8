@@ -31,6 +31,30 @@ PM_START_TEXT = """
 
 BOT_IMAGE = "https://te.legra.ph/file/86d447fa4f58b581f36bd.mp4"
 
+
+ABOUT = """Hello [{}], My name is *Asuka Langley Soryu*. A Powerful Telegram Group Management Bot built to help you manage Group easily.
+
+            \n ‣ I can Restrict Users.
+
+            \n ‣ I can Greet Users with customizable welcome message and even set a group rules
+
+            \n ‣ I have an advanced Anti-Flood System which will help you to safe group from Spammmer.
+
+            \n ‣ I can Warn Users until they reach max Warns, with each predefined actions such as Ban, Mute and Kick etc.
+
+            \n ‣ I have Note Keeping System, Blacklists, And even Predetermined replies on certain keywords.
+
+            \n ‣ I check Admins Permissions before perform any Command and more Stuffs.
+
+            \n ‣ I have an advanced Artificial Chatbot System, so can talk with users like humans.
+
+            \n\n*If you have any Question, You can join Support Chat. My Developer Team will Answer. Check Support Button Below*"""
+
+
+
+
+
+
 HELP_STRINGS = """
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
 the things I can help you with.
